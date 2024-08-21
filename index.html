@@ -30,6 +30,7 @@
                         'color-primary-extralight': 'rgba(171, 239, 95, 0.2)',
                         'title-color': '#212121',
                         'description-color': '#494949',
+                        'bg-color': 'rgb(244, 244, 244)',
                     },
                     fontFamily: {
                         'manrope': ["Manrope", "sans-serif"]
@@ -48,9 +49,10 @@
         <div class="navbar bg-base-100">
             <div class="navbar-start">
 
-                <a class="btn btn-ghost text-2xl md:text-4xl font-extrabold "><button class="w-8 h-8 md:w-10 md:h-10 text-xl bg-color-primary text-black text-center rounded-full">
-                    <i class="fa-solid fa-arrow-right -rotate-45 "></i>
-                </button>
+                <a class="btn btn-ghost text-2xl md:text-4xl font-extrabold "><button
+                        class="w-8 h-8 md:w-10 md:h-10 text-xl bg-color-primary text-black text-center rounded-full">
+                        <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+                    </button>
                     Raintorio</a>
             </div>
             <div class="navbar-center hidden lg:flex">
@@ -79,7 +81,8 @@
 
 
                 <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden border border-slate-300 rounded-full">
+                    <div tabindex="0" role="button"
+                        class="btn btn-ghost lg:hidden border border-slate-300 rounded-full">
                         <i class="fa-solid fa-bars"></i>
                     </div>
                     <ul tabindex="0"
@@ -98,19 +101,67 @@
         <!-- Banner -->
         <div class="hero mt-14">
             <div class="hero-content text-center">
-              <div class="flex flex-col justify-center md:items-center">
-                <img src="./assets/banner.png" alt="">
-                <h1 class="text-5xl text-title-color font-extrabold">A barn house of this design has a striking appearance</h1>
-                <p class="py-6 text-description-color">
-                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
-                </p>
-                <button class="btn bg-color-primary-light h-16 px-8 rounded-full font-extrabold text-xl">View Details
-                    <i class="fa-solid fa-arrow-right -rotate-45 btn bg-color-primary rounded-full"></i>
-                </button>
-              </div>
+                <div class="flex flex-col justify-center md:items-center">
+                    <img src="./assets/banner.png" alt="">
+                    <h1 class="text-5xl text-title-color font-extrabold">A barn house of this design has a striking
+                        appearance</h1>
+                    <p class="py-6 text-description-color">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                        weathered wood, sleek metal <br> accents, and large windows that flood the space with natural
+                        light.
+                    </p>
+                    <button class="btn bg-color-primary-light h-16 px-8 rounded-full font-extrabold text-xl">View
+                        Details
+                        <i class="fa-solid fa-arrow-right -rotate-45 btn bg-color-primary rounded-full"></i>
+                    </button>
+                </div>
             </div>
-          </div>
+        </div>
     </header>
+
+    <main class=" bg-bg-color">
+        <!-- About Us -->
+        <div class="container mx-auto hero pt-14 pb-14">
+            <div class="hero-content flex-col-reverse md:flex-row-reverse gap-10">
+                <img src="./assets/Rectangle.png"
+                    class="rounded-lg shadow-2xl" />
+                <div>
+                    <div class="text-center lg:text-left">
+                        <img class="relative -left-14 invisible lg:visible" src="./assets/vector.png" alt="">
+
+                        <button class="btn bg-white font-bold rounded-full mb-4"><i class="fa-solid fa-arrow-right"></i> About Us</button>
+
+                    <h1 class="text-5xl text-title-color font-extrabold">We design thoughtful, liveable spaces</h1>
+
+                    <p class="py-6 text-description-color">
+                        The barn house captivates with its blend of rustic charm and
+                        modern sophistication, featuring weathered wood, sleek metal accents.
+                    </p>
+                    </div>
+
+                    <!-- cards -->
+                    <div class="sm:flex md:flex-col justify-center items-center gap-4 space-y-4 sm:space-y-0 ">
+                        <!-- card 1-->
+                        <div class="flex items-center gap-3 bg-white rounded-2xl p-3 lg:p-6">
+                            <img src="./assets/commercial.png" alt="">
+                            <div>
+                                <h3 class="font-bold text-xl">Commercial</h3>
+                                <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="flex items-center gap-3 bg-white rounded-2xl p-3 lg:p-6">
+                            <img src="./assets/residential.png" alt="">
+                            <div>
+                                <h3 class="font-bold text-xl">Residential</h3>
+                                <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 </body>
 
