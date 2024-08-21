@@ -10,6 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+    <!-- Font Awsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- DaisyUI + Tailwind CSS CDN-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,6 +28,8 @@
                         'color-primary': '#ABEF5F',
                         'color-primary-light': 'rgba(171, 239, 95, 0.5)',
                         'color-primary-extralight': 'rgba(171, 239, 95, 0.2)',
+                        'title-color': '#212121',
+                        'description-color': '#494949',
                     },
                     fontFamily: {
                         'manrope': ["Manrope", "sans-serif"]
@@ -35,7 +42,58 @@
 </head>
 
 <body class="font-manrope">
-    
+
+    <header class="md:w-11/12 mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+
+                <a class="btn btn-ghost text-2xl md:text-4xl font-extrabold "><button class="w-8 h-8 md:w-10 md:h-10 text-xl bg-color-primary text-black text-center rounded-full">
+                    <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+                </button>
+                    Raintorio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-description-color">
+                    <li class="font-extrabold"><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Protfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end space-x-3">
+
+                <button class="w-12 h-12 border border-slate-300 text-center rounded-full invisible md:visible">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="w-12 h-12 border border-slate-300 text-center rounded-full invisible md:visible">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+
+                <a class="btn lg:btn-lg bg-color-primary rounded-full font-bold invisible md:visible">Book Consult
+                    <button class="w-8 h-8 bg-black text-white text-center rounded-full">
+                        <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+                    </button>
+                </a>
+
+
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden border border-slate-300 rounded-full">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 ">
+                        <li class="font-extrabold"><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Protfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
 
 </body>
 
