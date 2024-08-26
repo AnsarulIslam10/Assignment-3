@@ -47,48 +47,19 @@
 
 <body class="font-manrope">
 
-    <header class="md:w-11/12 mx-auto">
-        <!-- Navbar -->
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-                <a class="flex items-center gap-2 text-2xl md:text-4xl font-extrabold"><button
-                        class="w-8 h-8 md:w-10 md:h-10 text-xl bg-color-primary text-black text-center rounded-full">
-                        <i class="fa-solid fa-arrow-right -rotate-45 "></i>
-                    </button>
-                    Raintorio</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 text-description-color">
-                    <li class="font-extrabold"><a>Home</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Protfolio</a></li>
-                    <li><a>Blogs</a></li>
-                    <li><a>Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end space-x-3">
-
-                <button class="w-12 h-12 border border-slate-300 text-center rounded-full invisible md:visible">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-                <button class="w-12 h-12 border border-slate-300 text-center rounded-full invisible md:visible">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-
-                <a class="btn lg:btn-lg bg-color-primary rounded-full font-bold invisible md:visible">Book Consult
-                    <button class="w-8 h-8 bg-black text-white text-center border-none rounded-full">
-                        <i class="fa-solid fa-arrow-right -rotate-45 "></i>
-                    </button>
-                </a>
-
-
-                <div class="dropdown">
-                    <div tabindex="0" role="button"
-                        class="btn btn-ghost lg:hidden border border-slate-300 rounded-full">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 ">
+    <header class="bg-gradient-to-b from-[#F4F4F4] to-[#FFFFFF]">
+        <section class="md:w-11/12 mx-auto">
+            <!-- Navbar -->
+            <nav class="navbar">
+                <div class="navbar-start">
+                    <a class="flex items-center gap-2 text-2xl md:text-4xl font-extrabold"><button
+                            class="w-8 h-8 md:w-10 md:h-10 text-xl bg-color-primary text-black text-center rounded-full">
+                            <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+                        </button>
+                        Raintorio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-description-color">
                         <li class="font-extrabold"><a>Home</a></li>
                         <li><a>Services</a></li>
                         <li><a>Protfolio</a></li>
@@ -96,37 +67,69 @@
                         <li><a>Contact Us</a></li>
                     </ul>
                 </div>
-            </div>
+                <div class="navbar-end space-x-3">
 
-        </div>
-
-        <!-- Banner -->
-        <div class="hero my-14">
-            <div class="hero-content text-center">
-                <div class="flex flex-col justify-center md:items-center">
-                    <img src="./assets/banner.png" alt="">
-                    <h1 class="text-5xl text-title-color font-extrabold">A barn house of this design has a striking
-                        appearance</h1>
-                    <p class="py-6 text-description-color">
-                        Designing Homes You'll Love to Live In. <br>
-                        Let's create the perfect space for your life's moments.
-
-
-                    </p>
-                    <button
-                        class="btn bg-color-primary-light h-16 px-8 rounded-full font-extrabold border-none text-xl">View
-                        Details
-                        <i class="fa-solid fa-arrow-right -rotate-45 btn bg-color-primary border-none rounded-full"></i>
+                    <button class="w-12 h-12 border border-slate-300 text-center rounded-full invisible md:visible">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
+                    <button class="w-12 h-12 border border-slate-300 text-center rounded-full invisible md:visible">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                    <a class="btn lg:btn-lg bg-color-primary rounded-full font-bold invisible md:visible">Book Consult
+                        <button class="w-8 h-8 bg-black text-white text-center border-none rounded-full">
+                            <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+                        </button>
+                    </a>
+
+
+                    <div class="dropdown">
+                        <div tabindex="0" role="button"
+                            class="btn btn-ghost lg:hidden border border-slate-300 rounded-full">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 ">
+                            <li class="font-extrabold"><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Protfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+
+            <!-- Banner -->
+            <div class="hero my-14">
+                <div class="hero-content text-center">
+                    <div class="flex flex-col justify-center md:items-center">
+                        <img src="./assets/banner.png" alt="">
+                        <h1 class="text-5xl text-title-color font-extrabold">A barn house of this design has a striking
+                            appearance</h1>
+                        <p class="py-6 text-description-color">
+                            Designing Homes You'll Love to Live In. <br>
+                            Let's create the perfect space for your life's moments.
+
+
+                        </p>
+                        <button
+                            class="btn bg-color-primary-light h-16 px-8 rounded-full font-extrabold border-none text-xl">View
+                            Details
+                            <i
+                                class="fa-solid fa-arrow-right -rotate-45 btn bg-color-primary border-none rounded-full"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </header>
 
     <main class="bg-bg-color">
-        <main class="w-11/12 mx-auto">
+        <section class="w-11/12 mx-auto">
             <!-- About Us -->
-            <section class="hero pt-14 pb-14">
+            <section class="hero pt-14 pb-14"> 
                 <div class="hero-content flex-col-reverse lg:flex-row-reverse gap-10">
                     <img src="./assets/Rectangle.png" class="rounded-lg shadow-2xl" />
                     <div>
@@ -153,7 +156,8 @@
                                 <img src="./assets/commercial.png" alt="">
                                 <div>
                                     <h3 class="font-bold text-xl">Commercial</h3>
-                                    <p class="text-gray-500 pr-2">Where rustic charm elegantly meets modern design, the barn house <br> stands out as a unique.</p>
+                                    <p class="text-gray-500 pr-2">Where rustic charm elegantly meets modern design, the
+                                        barn house <br> stands out as a unique.</p>
                                 </div>
                             </div>
                             <!-- card 2 -->
@@ -161,7 +165,8 @@
                                 <img src="./assets/residential.png" alt="">
                                 <div class="card">
                                     <h3 class="font-bold text-xl">Residential</h3>
-                                    <p class="text-gray-500 pr-">Combining modern comfort with timeless charm for a uniquely stylish <br> home.</p>
+                                    <p class="text-gray-500 pr-">Combining modern comfort with timeless charm for a
+                                        uniquely stylish <br> home.</p>
                                 </div>
                             </div>
                         </div>
@@ -207,7 +212,8 @@
                     <h1 class="text-5xl text-title-color font-extrabold">Our Works Process</h1>
 
                     <p class="py-6 text-description-color">
-                        We turn your vision into reality through a collaborative and efficient process. <br> From design to completion, we ensure every detail is crafted with precision and care.
+                        We turn your vision into reality through a collaborative and efficient process. <br> From design
+                        to completion, we ensure every detail is crafted with precision and care.
                     </p>
                 </div>
 
@@ -218,7 +224,8 @@
                         <div class="card-body">
                             <img class="w-12 mb-2" src="./assets/concept.png" alt="">
                             <h3 class="font-bold text-xl text-title-color mb-2">Commercial</h3>
-                            <p class="text-title-color">Delivering top-tier commercial spaces tailored to meet your business needs and standards.</p>
+                            <p class="text-title-color">Delivering top-tier commercial spaces tailored to meet your
+                                business needs and standards.</p>
                         </div>
                     </div>
                     <!-- card 2 -->
@@ -226,7 +233,8 @@
                         <div class="card-body">
                             <img class="w-12 mb-2" src="./assets/flow-chart.png" alt="">
                             <h3 class="font-bold text-xl text-title-color mb-2">Design Process</h3>
-                            <p class="text-title-color">Crafting innovative designs through a collaborative approach and attention to detail.</p>
+                            <p class="text-title-color">Crafting innovative designs through a collaborative approach and
+                                attention to detail.</p>
                         </div>
                     </div>
                     <!-- card 3 -->
@@ -234,7 +242,8 @@
                         <div class="card-body">
                             <img class="w-12 mb-2" src="./assets/vision.png" alt="">
                             <h3 class="font-bold text-xl text-title-color mb-2">Supervision</h3>
-                            <p class="text-title-color">Ensuring every aspect of your project is managed and executed to the highest standards.</p>
+                            <p class="text-title-color">Ensuring every aspect of your project is managed and executed to
+                                the highest standards.</p>
                         </div>
                     </div>
                     <!-- card 1 -->
@@ -242,12 +251,13 @@
                         <div class="card-body">
                             <img class="w-12 mb-2" src="./assets/budget-planning.png" alt="">
                             <h3 class="font-bold text-xl text-title-color mb-2">Budget Planning</h3>
-                            <p class="text-title-color">Strategically planning and managing budgets to achieve your goals without surprises.</p>
+                            <p class="text-title-color">Strategically planning and managing budgets to achieve your
+                                goals without surprises.</p>
                         </div>
                     </div>
                 </div>
             </section>
-        </main>
+        </section>
     </main>
 
     <!-- Portfolio Section (Challenge) -->
@@ -261,7 +271,8 @@
                 <h1 class="text-5xl text-title-color font-extrabold">Our Latest Portfolio</h1>
 
                 <p class="py-6 text-description-color">
-                    Discover our latest projects, highlighting exceptional design and craftsmanship <br> that blend modern trends with timeless elegance.
+                    Discover our latest projects, highlighting exceptional design and craftsmanship <br> that blend
+                    modern trends with timeless elegance.
                 </p>
             </div>
 
@@ -273,7 +284,8 @@
                     <img class="w-full" src="./assets/img1.png" alt="">
                     <div>
                         <h2 class="text-2xl text-description-color font-bold mb-2">Commercial</h2>
-                        <p class="text-gray-500 mb-1">Designing commercial environments that enhance both functionality and style for your business needs.</p>
+                        <p class="text-gray-500 mb-1">Designing commercial environments that enhance both functionality
+                            and style for your business needs.</p>
                         <button class="font-extrabold text-xl">View
                             Details
                             <i class="fa-solid fa-arrow-right -rotate-45 btn bg-color-primary rounded-full"></i>
@@ -303,7 +315,8 @@
                     <img class="w-full" src="./assets/img4.png" alt="">
                     <div>
                         <h2 class="text-2xl text-description-color font-bold mb-2">Commercial</h2>
-                        <p class="text-gray-500 mb-1">Creating cutting-edge, practical commercial spaces that boost efficiency and appeal.</p>
+                        <p class="text-gray-500 mb-1">Creating cutting-edge, practical commercial spaces that boost
+                            efficiency and appeal.</p>
                         <button class="font-extrabold text-xl">View
                             Details
                             <i class="fa-solid fa-arrow-right -rotate-45 btn bg-color-primary rounded-full"></i>
@@ -346,7 +359,9 @@
                     </div>
                 </figure>
                 <div class="card-body items-center text-center">
-                    <p class="text-gray-500 mb-2">Working with Raintorio was a game-changer for our business. Their innovative designs and attention to detail transformed our office space into a productive and inspiring environment.</p>
+                    <p class="text-gray-500 mb-2">Working with Raintorio was a game-changer for our business. Their
+                        innovative designs and attention to detail transformed our office space into a productive and
+                        inspiring environment.</p>
                     <div class="card-actions">
                         <div class="rating">
                             <input type="radio" name="rating-5" class="mask mask-star-2 bg-yellow-400" />
@@ -369,7 +384,9 @@
                     </div>
                 </figure>
                 <div class="card-body items-center text-center">
-                    <p class="text-gray-500 mb-2">We couldn't be happier with the commercial space Raintorio created for us. Their professionalism and ability to blend style with functionality exceeded all our expectations.</p>
+                    <p class="text-gray-500 mb-2">We couldn't be happier with the commercial space Raintorio created for
+                        us. Their professionalism and ability to blend style with functionality exceeded all our
+                        expectations.</p>
                     <div class="card-actions">
                         <div class="rating">
                             <input type="radio" name="rating-5" class="mask mask-star-2 bg-yellow-400" />
@@ -392,7 +409,9 @@
                     </div>
                 </figure>
                 <div class="card-body items-center text-center">
-                    <p class="text-gray-500 mb-2">The team at Raintorio delivered an exceptional project on time and within budget. Their dedication and expertise in commercial design made the entire process smooth and successful.</p>
+                    <p class="text-gray-500 mb-2">The team at Raintorio delivered an exceptional project on time and
+                        within budget. Their dedication and expertise in commercial design made the entire process
+                        smooth and successful.</p>
                     <div class="card-actions">
                         <div class="rating">
                             <input type="radio" name="rating-5" class="mask mask-star-2 bg-yellow-400" />
@@ -421,7 +440,8 @@
                 <h1 class="text-5xl text-title-color font-extrabold">Let’s Discuss Next Project</h1>
 
                 <p class="py-6 text-description-color">
-                    Ready to start your next project? Fill out the contact form, <br> and we’ll be in touch to turn your vision into reality.
+                    Ready to start your next project? Fill out the contact form, <br> and we’ll be in touch to turn your
+                    vision into reality.
                 </p>
             </div>
 
@@ -464,7 +484,9 @@
                         <i class="fa-solid fa-arrow-right -rotate-45 "></i>
                     </button>
                     Raintorio</a>
-                <p class="mt-4 text-gray-500">At Raintorio, we’re committed to bringing your vision to life. Connect with us for expert design and construction services, <br> and let’s create something exceptional together."</p>
+                <p class="mt-4 text-gray-500">At Raintorio, we’re committed to bringing your vision to life. Connect
+                    with us for expert design and construction services, <br> and let’s create something exceptional
+                    together."</p>
             </div>
             <div>
                 <ul class="md:flex justify-center gap-5 space-y-3 md:space-y-0 text-[#E9E9E9]">
